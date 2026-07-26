@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { title } from "process";
+import SecondaryFooter from "../components/SecondaryFooter";
 
 const upcoming = [
     {
@@ -17,27 +18,27 @@ const upcoming = [
         location: "TTDC Desert Studio",
         info: "https://www.paypal.com/ncp/payment/HZ455RS5X4XM4"
     },
-    // {
-    //     title: "All levels contemporary",
-    //     date: "Wednesdays @ 10:30am",
-    //     location: "Highland Park, LA",
-    //     info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619308"
-    // },
-    // {
-    //     title: "OCSA master class",
-    //     date: "March 2024",
-    //     location: "",
-    //     info: ""
-    // },
-    // {
-    //     title: "South Pasadena High School",
-    //     date: "Ongoing"
-    // },
 ]
 
 const past = [
     {
-        title: "Grand Arts High School master class",
+        title: "Chapman University — Professor of Modern Dance",
+        date: "2026 — Present"
+    },
+    {
+        title: "South Pasadena High School — Contemporary Dance",
+        date: "2023 — Present"
+    },
+    {
+        title: "L.A. Dance Project Community Classes",
+        date: "2026"
+    },
+    {
+        title: "Colburn School Master Class",
+        date: "September 2025",
+    },
+    {
+        title: "Grand Arts High School Master Class",
         date: "May 2024",
     },
     {
@@ -65,7 +66,7 @@ const past = [
         date: "2023"
     },
     {
-        title: "University of Redlands Faculty",
+        title: "University of Redlands — Professor of Modern Dance",
         date: "2022-2023"
     },
     {
@@ -86,70 +87,30 @@ export default function Teaching() {
     return (
         <Layout>
             <Head>
-                <title>Teaching</title>
+                <title>Megan Paradowski | Upcoming Classes and Teaching History</title>
                 <meta
                 name="description"
-                content="Empara class | Join us for ballet and contemporary"
+                content="Take class | Megan Paradowski Los Angeles Choreographer, Director, and Movement Director"
                 />
             </Head>
             <div className="relative">
-            {/* <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
-                <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Empara: The Class</div>
+            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+                <h1 className="basis-1/3 md:basis-1/2 pb-4 md:pb-0">Teaching Philosophy</h1>
                 <div className="basis-1/2 italic text-[#bab5b1] text-sm">
-                    Empara: The Class blends intense technical rigor with improvisational movement. Grounded in task-based exploration, strengthening and alignment, and phrase work, the class builds physical stamina while pushing the boundaries of personal expression. With influences from Wim Vandekeybus and Pina Bausch, the movement shifts between raw, animalistic physicality, pedestrian gestures, and moments of clear technique. Participants are encouraged to bring their own thoughts, emotions, and lived experiences into the work. Together, we will discover the transformative space we inhabit when we let go and surrender to the dance.
+                    Rooted in theatricality and risk-driven movement, Megan's class challenges dancers to twist, contort, and destabilize the familiar. Through layers of pedestrianism and storytelling, participants are encouraged to access raw expression while maintaining control and intention. Dancers are guided through freeform exploration to awaken sensation and deepen awareness, technical exercises that build strength and clarity, and dynamic phrasework.
+                    <br />
+                    <br />
+                    With influences from Wim Vandekeybus and Pina Bausch, the movement shifts between raw, animalistic physicality, pedestrian gestures, and moments of clear technique. Participants are encouraged to bring their own thoughts, emotions, and lived experiences into the work. Together, we discover the transformative space we inhabit when we let go and surrender to the dance.
                 </div>
-            </div> */}
-                <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Empara x TTDC <br />Tuesday, 5/13</div>
+            </div>
+                <div className="text-white block md:flex justify-between pt-[12vh] px-4 md:px-8">
+                    <h1 className="basis-1/3 md:basis-1/2 pb-4 md:pb-0">Upcoming Classes</h1>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic">
-                        <div className="pb-4">Join us in the Hi Desert for contemporary phrasework, strengthening and alignment, and task-based improvisation, led by Empara founder and TTDC teacher Meg Paradowski. Classes will be held at TTDC Desert Studio - 73911 29 Palms Hwy Twentynine Palms, CA 92277.</div>
-                    <div className="flex flex-col divide-y-[1px] divide-[#bab5b1]">
-                    {upcoming.map((workshop, index) => (
-                        <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
-                            <div className="basis-1/2">
-                                {workshop.title}
-                            </div>
-                            <div className="basis-2/6">
-                                {workshop.date}
-                                <br />
-                                {workshop.time}
-                                <br />
-                                {workshop.location}
-                            </div>
-                            {workshop.info && 
-                                // <button className="bg-[#6e808d] p-2">
-                                    <a className="basis-1/6 text-right font-bold text-white underline" href={workshop.info} target="_blank">{workshop.info ? "Sign Up" : ""}</a>
-                                // </button>
-                            }
-                        </div>
-                    ))}
-                    </div>
+                        <div className="pb-4">New dates coming soon.</div>
                     </div>
                 </div>
-                {/* <div className="text-white block md:flex justify-between pt-[12vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Upcoming</div>
-                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
-                    {upcoming.map((workshop, index) => (
-                        <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
-                            <div className="basis-1/2">
-                                {workshop.title}
-                            </div>
-                            <div className="basis-2/6">
-                                {workshop.date}
-                                <br />
-                                {workshop.time}
-                                <br />
-                                {workshop.location}
-                            </div>
-                            {workshop.info && 
-                                    <a className="basis-1/6 text-right font-bold text-white underline" href={workshop.info} target="_blank">{workshop.info ? "Sign Up" : ""}</a>
-                            }
-                        </div>
-                    ))}
-                    </div>
-                </div> */}
                 <div className="text-white block md:flex justify-between py-[12vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Past</div>
+                    <h1 className="basis-1/3 md:basis-1/2 pb-4 md:pb-0">Teaching History</h1>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {past.map((workshop, index) => (
                         <div className={"flex justify-between pb-2"  + (index !== 0 ? " pt-2" : "")}>
@@ -159,6 +120,7 @@ export default function Teaching() {
                     ))}
                     </div>
                 </div>
+                <SecondaryFooter />
             </div>
         </Layout>
     )

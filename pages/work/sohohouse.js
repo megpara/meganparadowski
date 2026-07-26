@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout";
 import Image from "next/image";
+import SecondaryFooter from "../../components/SecondaryFooter";
 
 const credits = [
     {
@@ -82,6 +83,7 @@ export default function SohoHouse() {
                         </div>
                     ))}
                 </div>
+            <SecondaryFooter />
         </Layout>
     )
 }

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: "Berliner Fraktur";
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot");
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.svg#Berliner Fraktur")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
 #__next {
     height: 100%;
 }
@@ -16,6 +29,22 @@ body {
     letter-spacing: 1px;
     font-weight: 100;
     background-color: #131313;
+    color: #f7f5ee;
+    cursor: default;
+}
+
+h1 {
+    font-family: "Berliner Fraktur";
+    font-size: 1.6rem;
+}
+
+.menuItem, .footerLogo {
+    font-family: "Berliner Fraktur";
+}
+
+.footerLogo {
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .footer {

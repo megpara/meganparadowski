@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout";
+import SecondaryFooter from "../../components/SecondaryFooter";
 
 const credits = [
     {
@@ -62,6 +63,7 @@ export default function Babst() {
                     </div>
                     </div>
                 </div>
+                <SecondaryFooter />
         </Layout>
     )
 }

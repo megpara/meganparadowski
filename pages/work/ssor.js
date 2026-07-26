@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout";
 import Image from "next/image";
+import SecondaryFooter from "../../components/SecondaryFooter";
 
 const credits = [
     {
@@ -38,7 +39,7 @@ export default function SSOR() {
     return (
         <Layout>
             <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">She Sprang Out Red</div>
+                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl">She Sprang Out Red</div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
@@ -59,6 +60,7 @@ export default function SSOR() {
                         </div>
                     ))}
                 </div>
+            <SecondaryFooter />
         </Layout>
     )
 }

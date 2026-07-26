@@ -6,7 +6,7 @@ export default function Menu({ open, toggle }) {
     return (
         <AnimatePresence>
         {open && (
-        <div className="fixed top-0 right-0 w-full h-full text-white z-50">
+        <div className="fixed top-0 right-0 w-full h-full text-[#131313] z-50">
           <motion.div
             initial={{ width: "0%" }}
             animate={{
@@ -34,12 +34,13 @@ export default function Menu({ open, toggle }) {
                 className="w-full h-full flex items-center justify-center"
             >
             <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
-                <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/work" />
-                <MenuItem subtitleOne="About" subtitleTwo="Empara" title="Origin" link="/origin" />
-                <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/ethos" />
+                <MenuItem subtitleOne="Film" subtitleTwo="samples" title="Film" link="/film"/>
+                <MenuItem subtitleOne="Movement" subtitleTwo="stills" title="Editorial" link="/editorial" />
+                <MenuItem subtitleOne="Performance" subtitleTwo="samples" title="Performance" link="/performance" />
+                <MenuItem subtitleOne="About" subtitleTwo="Empara" title="Company" link="/company" />
+                <MenuItem subtitleOne="About" subtitleTwo="Meg" title="About" link="/about" />
                 <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/teaching" />
-                <MenuItem subtitleOne="Check back" subtitleTwo="soon" title="Events" link="/" />
-                <MenuItem subtitleOne="Order" subtitleTwo="now" title="Merch" link="/merch" />
+                <MenuItem subtitleOne="Reach" subtitleTwo="out" title="Contact" link="/contact" />
             </div>
             <Footer />
             </motion.div>

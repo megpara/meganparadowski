@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: "Berliner Fraktur";
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot");
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.svg#Berliner Fraktur")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,6 +37,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-family: "Berliner Fraktur";
 }
 
 @layer utilities {

@@ -37,16 +37,19 @@ export default function Header() {
 
     return (
         <>
-        <div className={"w-full h-[12vh] fixed flex justify-start items-center text-white z-[60] px-4 md:px-8" + (bg ? " bg-[#131313]" : "")}>
-            <div className="basis-1/3 flex gap-4 z-40 lowercase font-thin text-xs">
+        <div className={"w-full h-[12vh] fixed flex justify-start items-center z-[60] px-4 md:px-8" + (bg ? " bg-[#131313]" : "")}>
+            <div className="basis-1/3 flex gap-4 z-40 text-[8px] md:text-[10px] uppercase">
                 <a href="https://vimeo.com/user218114889" target="_blank">Vimeo</a>
-                <a href="https://www.instagram.com/_empara" target="_blank">Ig</a>
+                <a href="https://www.instagram.com/megparadowski" target="_blank">Ig</a>
             </div>
-            <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace 
+            {/* <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace 
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
             >
                 <Image src={isHovering ? "/logofunky.png" : "/logofinal.png"} alt="Empara logo" width={140} height={25}/>
+            </Link> */}
+            <Link className="basis-1/3 flex justify-center z-40 relative tracking-widest" href="/">
+            <h1>Megan Paradowski</h1>
             </Link>
             {menuOpen ? (
                 <div className="basis-1/3 flex justify-end">
