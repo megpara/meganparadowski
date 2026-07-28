@@ -32,7 +32,7 @@ const media = [
 export default function OracleEgg() {
     return (
         <Layout>
-            <div className="text-center pt-[24vh] px-4 md:px-8 text-[#bab5b1] text-sm italic">Preliminary exploration with sculptures by Leah Piepgras for "Sun Lover" | Oracle Egg DTLA March 2024<br />Dancers: Davon Rashawn, Daphne Fernberger, Maddie Miller, Kevin Lau, Bianca Chung</div>
+            <div className="text-center pt-[20vh] md:pt-[24vh] px-4 md:px-8 text-[#bab5b1] text-sm italic">Preliminary exploration with sculptures by Leah Piepgras for "Sun Lover" | Oracle Egg DTLA March 2024<br />Dancers: Davon Rashawn, Daphne Fernberger, Maddie Miller, Kevin Lau, Bianca Chung</div>
             <div className="w-full flex flex-col items-center px-4 md:px-8">
                 <div className="w-full md:w-1/2 relative pt-[70%] md:pt-[35%]">
                 <iframe src="https://player.vimeo.com/video/1050587020?h=2a3f6860a2&autoplay=1&title=0&byline=0&portrait=0" className="w-full absolute h-full top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen />

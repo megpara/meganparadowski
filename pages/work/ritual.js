@@ -20,7 +20,7 @@ export default function Ritual() {
                         </iframe>
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
-                    <p className="text-xs italic pt-8">
+                    <p className="text-xs italic pt-8 px-4 md:px-8">
                     Ritual<br />
                     Directed by Megan Paradowski & SUUVI<br />
                     Director of Photography: Colin Lupe<br />
@@ -35,7 +35,7 @@ export default function Ritual() {
             <div className="w-full columns-1 md:columns-3 gap-2 md:gap-4 py-8 px-4 md:px-8 pb-[15vh] relative">
                 {images.map((photo, index) => (
                     <div className="w-full flex flex-col items-center justify-center">
-                    <Image src={photo} alt="Photo of Ritual dance film" width={500} height={300} className="pb-2 md:pb-4" />
+                    <Image src={photo} alt="Photo of Ritual dance film" width={500} height={300} className="pb-2 md:pb-4 w-full" />
                     </div>
                 ))}
             </div>

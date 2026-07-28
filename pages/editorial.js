@@ -32,7 +32,12 @@ const works = [
         title: "",
         mediaOrientation: "vertical",
     },
-        {
+    {
+        media: "/thumbnail.jpg",
+        title: "",
+        mediaOrientation: "horizontal",
+    },
+    {
         media: "/work/stills/tippy2.jpg",
         title: "Levis",
         mediaOrientation: "horizontal",
@@ -58,7 +63,7 @@ const works = [
         mediaOrientation: "horizontal",
     },
     {
-        media: "/work/welldone/Empara_IWR-8.jpg",
+        media: "/work/stills/arch.jpg",
         title: "",
         mediaOrientation: "vertical",
     }
@@ -75,7 +80,7 @@ export default function Editorial() {
                 content="Editorial Movement Direction | Megan Paradowski | Los Angeles Director, Choreographer, and Movement Director"
                 />
             </Head>
-            <div className="text-white w-full columns-1 md:columns-2 gap-8 md:gap-12 p-8 pt-[15vh] relative">
+            <div className="text-white w-full columns-1 md:columns-2 gap-8 md:gap-12 px-4 md:px-8 pt-[20vh] md:pt-[24vh] py-20 relative">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column w-full relative group">
                         <Image src={work.media} alt="Project image" className={"object-cover" + (work.title ? " opacity-1 group-hover:opacity-80 duration-300" : "") + (work.mediaOrientation == "horizontal" ? " aspect-[3/2]" : " aspect-[3/4]")} width={700} height={500} priority/>

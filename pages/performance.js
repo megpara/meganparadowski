@@ -79,7 +79,7 @@ export default function Performance() {
                 content="Choreography | Megan Paradowski | Los Angeles Director, Choreographer, and Movement Director"
                 />
             </Head>
-            <div className="text-white w-full columns-1 md:columns-3 gap-8 md:gap-12 p-8 pt-[15vh] relative">
+            <div className="text-white w-full columns-1 md:columns-3 gap-8 md:gap-12 px-4 md:px-8 pb-20 pt-[20vh] md:pt-[24vh] relative">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column w-full relative" onClick={work.url ? () => router.push(work.url) : mockClick}>
                         {(work.type) == "image" && <Image src={work.media} alt="Project image" className={"opacity-80 group-hover:opacity-100 duration-300 object-cover" + (work.mediaOrientation == "horizontal" ? " aspect-video" : " aspect-3/4")} width={500} height={300} priority/>}

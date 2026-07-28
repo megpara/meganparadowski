@@ -36,10 +36,10 @@ const credits = [
 export default function Babst() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8  md:gap-8">
-                    <div className="basis-1/3 md:basis-1/2 pb-4 pr-12 md:pb-0 tracking-widest">
-                        <div className="font-display text-4xl">Resonant Figures</div>
-                        <div className="text-[#bab5b1] text-sm italic pt-8">Created in collaboration with flautist Daniela Mars at Babst Gallery in response to Vanessa Conte's solo exhibition RIDE.</div>
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8  md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pr-0 md:pr-8 pb-8 md:pb-0 tracking-widest">
+                        <h1>Resonant Figures</h1>
+                        <div className="text-[#bab5b1] text-sm italic pt-4 md:pt-8">Created in collaboration with flautist Daniela Mars at Babst Gallery in response to Vanessa Conte's solo exhibition RIDE.</div>
                     </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (

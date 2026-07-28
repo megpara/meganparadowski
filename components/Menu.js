@@ -33,7 +33,7 @@ export default function Menu({ open, toggle }) {
                 }}
                 className="w-full h-full flex items-center justify-center"
             >
-            <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
                 <MenuItem subtitleOne="Film" subtitleTwo="samples" title="Film" link="/film"/>
                 <MenuItem subtitleOne="Movement" subtitleTwo="stills" title="Editorial" link="/editorial" />
                 <MenuItem subtitleOne="Performance" subtitleTwo="samples" title="Performance" link="/performance" />

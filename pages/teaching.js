@@ -94,7 +94,7 @@ export default function Teaching() {
                 />
             </Head>
             <div className="relative">
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8">
                 <h1 className="basis-1/3 md:basis-1/2 pb-4 md:pb-0">Teaching Philosophy</h1>
                 <div className="basis-1/2 italic text-[#bab5b1] text-sm">
                     Rooted in theatricality and risk-driven movement, Megan's class challenges dancers to twist, contort, and destabilize the familiar. Through layers of pedestrianism and storytelling, participants are encouraged to access raw expression while maintaining control and intention. Dancers are guided through freeform exploration to awaken sensation and deepen awareness, technical exercises that build strength and clarity, and dynamic phrasework.

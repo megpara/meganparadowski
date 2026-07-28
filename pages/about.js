@@ -14,7 +14,7 @@ export default function About() {
                 />
             </Head>
                 <div className="relative z-[-1]">
-                    <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8 py-20">
+                    <div className="text-white flex flex-col md:flex-row gap-4 justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8 pb-20">
                         <h1 className="basis-1/2">About Megan Paradowski</h1>
                         <div className="basis-1/2 text-[#bab5b1] text-sm italic text-justify">
                             Megan Paradowski holds a BFA in Dance from Tisch School of the Arts at NYU. She has choreographed and performed in contemporary dance works across the US and Europe in venues such as Soho House, 2220 Arts + Archives, the Museum of Neon Art, the Institute for Art and Olfaction, NAVEL LA, and Hosek Contemporary Berlin. Her work has been reviewed by the LA Times, Autre Magazine, LA Dance Chronicle, and Fjord Review, amongst others. She is honored to have received grants from the German Consulate General in Los Angeles and the US Embassy in Cyprus, and was a finalist for LAUNCH, LA Dance Project's residency program in 2024. She has had the incredible opportunity to tour and perform her work over the past five years in places such as Berlin, London, and Cyprus.

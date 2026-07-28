@@ -42,14 +42,8 @@ export default function Header() {
                 <a href="https://vimeo.com/user218114889" target="_blank">Vimeo</a>
                 <a href="https://www.instagram.com/megparadowski" target="_blank">Ig</a>
             </div>
-            {/* <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace 
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
-            >
-                <Image src={isHovering ? "/logofunky.png" : "/logofinal.png"} alt="Empara logo" width={140} height={25}/>
-            </Link> */}
             <Link className="basis-1/3 flex justify-center z-40 relative tracking-widest" href="/">
-            <h1>Megan Paradowski</h1>
+            <h1 className="text-center">Megan Paradowski</h1>
             </Link>
             {menuOpen ? (
                 <div className="basis-1/3 flex justify-end">

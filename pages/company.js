@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import SecondaryFooter from "../components/SecondaryFooter";
 
-export default function Ethos() {
+export default function Company() {
     return(
         <Layout>
             <Head>
@@ -13,7 +13,7 @@ export default function Ethos() {
                 />
             </Head>
             <div className="relative w-full h-full flex flex-col">
-                <div className="basis-1/3 flex justify-between pt-[24vh] px-4 md:px-8">
+                <div className="basis-1/3 flex flex-col md:flex-row gap-4 justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8">
                     <h1 className="basis-1/2">Empara — A Movement Company</h1>
                     <div className="basis-1/2 italic text-[#bab5b1] text-sm">
                     Empara is a movement and choreography company focused on creating immersive, nontraditional contemporary dance experiences. The company celebrates other art forms and encourages all bodies to connect to their innate desire to move. Empara originates from the Latin word "emparer," meaning to take possession of something. In the work we take possession of the human form, the skin and what it holds, emotions, lineage, and the collective unconscious.

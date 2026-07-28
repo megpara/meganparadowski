@@ -55,10 +55,10 @@ const images = [
 export default function SohoHouse() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8  md:gap-8">
-                    <div className="basis-1/3 md:basis-1/2 pb-4 pr-12 md:pb-0 tracking-widest">
-                        <div className="font-display text-4xl">Embodying the Equinox: A Feast for the Senses</div>
-                        <div className="text-[#bab5b1] text-sm italic pt-8">The autumn equinox is a time for balance, responsibility, and engagement. This work connects people to deeper societal values and the essential relationship between people and land, all through an unconventional artist-orchestrated meal by way of creative edible installations, guided movement artists, and live scored sound.</div>
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8  md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pr-0 md:pr-12 md:pr-0 pb-8 md:pb-0 tracking-widest">
+                        <h1>Embodying the Equinox: A Feast for the Senses</h1>
+                        <div className="text-[#bab5b1] text-sm italic pt-4 md:pt-8">The autumn equinox is a time for balance, responsibility, and engagement. This work connects people to deeper societal values and the essential relationship between people and land, all through an unconventional artist-orchestrated meal by way of creative edible installations, guided movement artists, and live scored sound.</div>
                     </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
@@ -79,7 +79,7 @@ export default function SohoHouse() {
                 <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 py-8 px-4 md:px-8 pb-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
-                        <Image src={photo} alt="Photo of Embodying the Equinox" width={500} height={300} className="pb-2 md:pb-4" />
+                        <Image src={photo} alt="Photo of Embodying the Equinox" width={500} height={300} className="pb-2 md:pb-4 w-full" />
                         </div>
                     ))}
                 </div>

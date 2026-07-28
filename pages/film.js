@@ -59,10 +59,10 @@ export default function Film() {
                 content="Film Work | Megan Paradowski | Los Angeles Director, Choreographer, and Movement Director"
                 />
             </Head>
-            <div className="w-full columns-1 md:columns-3 gap-8 md:gap-12 p-8 pt-48 relative">
+            <div className="w-full columns-1 md:columns-3 gap-8 md:gap-12 px-4 md:px-8 py-8 pt-[20vh] md:pt-[24vh] relative">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column w-full relative" onClick={work.url ? () => router.push(work.url) : mockClick}>
-                        {(work.type) == "image" && <Image src={work.media} alt="Project image" className="opacity-80 group-hover:opacity-100 duration-300 aspect-video object-cover" width={500} height={300} priority/>}
+                        {(work.type) == "image" && <Image src={work.media} alt="Project image" className="opacity-80 group-hover:opacity-100 duration-300 aspect-video object-cover w-full" width={500} height={300} priority/>}
                         {(work.type) == "video" && <video loop autoPlay muted playsInline src={work.media} className="opacity-80 group-hover:opacity-100 duration-300 aspect-video"/>}
                         <div className="text-[#bab5b1] group-hover:text-[#f2ede2] duration-300 pt-6">
                             <div className="text-sm pb-1">{work.title}</div>
@@ -70,7 +70,7 @@ export default function Film() {
                     </div>
                 ))}
             </div>
-            <div className="uppercase w-full pb-24 flex flex-col px-8 text-[8px] md:text-[10px] gap-4">
+            <div className="uppercase w-full pb-24 flex flex-col px-4 md:px-8 text-[8px] md:text-[10px] gap-4 text-center md:text-left">
                 <p>Megan is 1/2 of director duo Colin & Meg</p> 
                 <a href="https://www.colinandmeg.direct" target="_blank" className="underline">colinandmeg.direct</a>
             </div>

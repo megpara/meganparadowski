@@ -80,10 +80,10 @@ const images = [
 export default function Simulacra() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8  md:gap-8">
-                    <div className="basis-1/3 md:basis-1/2 pb-4 pr-12 md:pb-0 tracking-widest">
-                        <div className="font-display text-4xl">Simulacra</div>
-                        <div className="text-[#bab5b1] text-sm italic pt-8">Created in residency at L.A. Dance Project for LAUNCH:LA 2025, Simulacra features a 50-pound ice sculpture made of beet juice that drips and stains the white-carpeted stage over the course of the performance.</div>
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8  md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pr-0 md:pr-12 pb-8 md:pb-0 tracking-widest">
+                        <h1>Simulacra</h1>
+                        <div className="text-[#bab5b1] text-sm italic pt-4 md:pt-8">Created in residency at L.A. Dance Project for LAUNCH:LA 2025, Simulacra features a 50-pound ice sculpture made of beet juice that drips and stains the white-carpeted stage over the course of the performance.</div>
                     </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (

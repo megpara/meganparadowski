@@ -57,10 +57,10 @@ const images = [
 export default function WellDone() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8 md:gap-8">
-                    <div className="basis-1/3 md:basis-1/2 pb-4 md:pb-0 tracking-widest">
-                        <div className="font-display text-4xl">Well Done</div>
-                        <div className="text-[#bab5b1] text-sm italic pt-8">"Well Done" is an investigation of individual and systemic facades in the intimate microcosm of a dinner party. The dancers perform throughout the space as audiences enjoy a 3-course meal that is thematically and choreographically tied into the performance.</div>
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8 md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pb-8 md:pb-0 tracking-widest">
+                        <h1>Well Done</h1>
+                        <div className="text-[#bab5b1] text-sm italic pt-4 md:pt-8">"Well Done" is an investigation of individual and systemic facades in the intimate microcosm of a dinner party. The dancers perform throughout the space as audiences enjoy a 3-course meal that is thematically and choreographically tied into the performance.</div>
                     </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
@@ -84,7 +84,7 @@ export default function WellDone() {
                     </div>
                     </div>
                 </div>
-                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-8 pb-[15vh] relative">
+                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-4 md:p-8 pb-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
                         <Image src={photo} alt="Photo of Well Done" width={500} height={300} className="pb-2 md:pb-4" />

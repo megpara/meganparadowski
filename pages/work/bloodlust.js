@@ -67,10 +67,10 @@ const media = [
 export default function Bloodlust() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8  md:gap-8">
-                    <div className="basis-1/3 md:basis-1/2 pb-4 pr-12 md:pb-0 tracking-widest">
-                        <div className="font-display text-4xl">Gotas de Amor</div>
-                        <div className="text-[#bab5b1] text-sm italic pt-8">Immersive, durational performance Gotas de Amor explores bodies as liquid, dripping in and out of one another and immersing themselves in the architecture of the space. This work brings the physical and metaphorical representations of liquid to life — water, wine, love, sacrifice, fantasy, illusion. Originally performed at Bloodlust Wine Bar in Ensenada, Mexico, the piece was also performed at The Aster Los Angeles in collaboration with featured artist Avery Wheless.</div>
+            <div className="text-white block md:flex justify-between pt-[20vh] md:pt-[24vh] px-4 md:px-8  md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pb-8 md:pb-0 pr-0 md:pr-12 md:pb-0 tracking-widest">
+                        <h1>Gotas de Amor</h1>
+                        <div className="text-[#bab5b1] text-sm italic pt-4 md:pt-8">Immersive, durational performance Gotas de Amor explores bodies as liquid, dripping in and out of one another and immersing themselves in the architecture of the space. This work brings the physical and metaphorical representations of liquid to life — water, wine, love, sacrifice, fantasy, illusion. Originally performed at Bloodlust Wine Bar in Ensenada, Mexico, the piece was also performed at The Aster Los Angeles in collaboration with featured artist Avery Wheless.</div>
                     </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
