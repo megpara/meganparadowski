@@ -85,7 +85,7 @@ export default function Editorial() {
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column w-full relative group">
                         <Image src={work.media} alt="Project image" className={"object-cover" + (work.title ? " opacity-1 group-hover:opacity-80 duration-300" : "") + (work.mediaOrientation == "horizontal" ? " aspect-[3/2]" : " aspect-[3/4]")} width={700} height={500} priority/>
                             {work.title && 
-                                <div className="absolute text-sm top-0 left-0 w-full h-full flex flex-col items-center justify-center invisible group-hover:visible duration-300">
+                                <div className="absolute text-sm top-0 left-0 w-full h-full flex flex-col items-center justify-center invisible md:group-hover:visible duration-300">
                                     {work.title}
                                 </div>
                             }

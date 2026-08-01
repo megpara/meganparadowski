@@ -67,7 +67,7 @@ const past = [
     },
     {
         title: "University of Redlands — Professor of Modern Dance",
-        date: "2022-2023"
+        date: "2022-23"
     },
     {
         title: "Brockus Project Studios",
