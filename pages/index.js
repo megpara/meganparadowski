@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <Layout>
             <div className="w-screen h-screen relative">
-            <video loop autoPlay muted playsInline className="absolute w-screen h-screen top-0 left-0 object-cover" src="choreoreel.mp4" poster="/sezanne2.jpg" />
+            <video loop autoPlay muted playsInline className="absolute w-screen h-screen top-0 left-0 object-cover" src="choreoreel.mp4" poster="/work/stills/sezanne2.jpg" />
             <div className="absolute bottom-16 w-full h-[12vh] flex flex-col md:flex-row items-center md:items-end text-[8px] md:text-[10px] tracking-widest px-8">
                 <div className="basis-1/3">
                     <div className="uppercase cursor-default">
