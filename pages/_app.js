@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://use.typekit.net/uao4cwk.css" />
         <meta property="og:title" content="Megan Paradowski | Choreographer, Movement Director, Director" key="ogtitle" />
         <meta property="og:description" content="Choreographer, Movement Director, Director" key="ogdesc" />
-        <meta property="og:image" content="/sezanne2.jpg" />
+        <meta property="og:image" content="/work/stills/sezanne2.jpg" />
         <link rel="apple-touch-icon" href="/favicon.png" />
       </Head>
       <div className={`${optimanova.variable} font-paragraph w-full h-full`}>
