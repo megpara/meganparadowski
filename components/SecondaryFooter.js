@@ -8,7 +8,7 @@ export default function SecondaryFooter() {
                     <a href="https://vimeo.com/user218114889" target="_blank">Vimeo</a>
                     <a href="https://www.instagram.com/megparadowski" target="_blank">Ig</a>
                 </div>
-                <a href="mailto:colinandmeg@colinandmeg.direct">megan@emparadance.com</a>
+                <a href="mailto:megan@emparadance.com">megan@emparadance.com</a>
             </div>
             <div className="footerLogo md:basis-1/3 text-center">MP</div>
             <div className="flex flex-col gap-4 uppercase items-center md:items-end md:basis-1/3">
